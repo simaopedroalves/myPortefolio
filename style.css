@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Onest:wght@300;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Onest', sans-serif;
+    color: var(--white-text);
+}
+
+:root {
+    --one: #0A4D68;
+    --two: #088395;
+    --three: #05BFDB;
+    --four: #00FFCA;
+    --five: #000;
+    --six: #7D7C7C;
+    --seven: #fff;
+}
+/* 
+====================== 
+.box {
+    background-color: transparent;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: run 120s infinite linear;
+}
+
+@keyframes run {
+    from {left: -20vw;}
+    to {left: 190vw;}
+}
+
+.triangle {
+    /* background-color: blue; 
+    height: 0;
+    width: 0;
+    border: solid 1rem transparent;
+    border-right: 0;
+    /* border-left: 50%;
+    border-right: 50%; 
+    border-left: 2rem solid rgba(0, 255, 200, 0.3);
+    border-radius: 20%;
+   
+}
+
+.one {
+    position: absolute;
+    margin-left: 1rem;
+}
+
+.two {
+    position: absolute;
+    margin-right: 1rem;
+}
+
+.arrows-group {
+    display: grid;
+    /* gap: 0.5rem; 
+    align-items: center;
+    height: 100vh;
+}
+
+.arrows-group .box2{
+    margin-left: -30vw;
+}
+
+.arrows-group .box3 {
+    margin-left: -60vw;
+}
+.arrows-group .box4 {
+    margin-left: -90vw;
+}
+
+.right-to-left {
+    position: fixed;
+    top: 0;
+}
+
+.triangle-2 {
+    height: 0;
+    width: 0;
+    border: solid 1rem transparent;
+    border-left: 0;
+    border-right: 2rem solid rgba(0, 255, 200, 0.3);
+    border-radius: 20%;
+}
+
+.box-r-to-l {
+    background-color: transparent;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: runRtoL 120s infinite linear;
+}
+
+@keyframes runRtoL {
+    from {left: 190vw;}
+    to {left: -20vw;}
+}
+/* =============setas animadas================= 
+
+.border {
+    border: solid red 3px;;
+}
+*/
+a:link {
+    color: var(--seven);
+}
+
+.body {
+    background-color: var(--five);
+} 
+
+.logo {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--three);
+}
+
+.log-div {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    color: var(--four);
+    /* transform: rotate(90deg); */
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: var(--three);
+}
+
+.social-media i {
+    font-size: medium;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    max-width: 100vw;
+    max-height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* border: solid green 3px; */
+    /* background-color: var(--two); */
+    z-index: 999;
+}
+
+.fa-bars, .fa-xmark {
+    font-size: 2rem;
+    /* border: red solid 5rem; */
+    color: var(--three);
+}
+
+.menu {
+
+    justify-content: center ;
+}
+
+.list-links {
+   display: none;
+}
+
+.list-links-visible {
+    display: grid;
+    width: 70vw;
+    margin-top: 40rem;
+    justify-content: center;
+}
+
+.list-links-visible li {
+    list-style: none;
+    min-width: 80vw;
+    background-color: var(--one);
+    color: var(--six);
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 2rem;
+
+}
+
+.apresentation {
+    margin-top: 3rem;
+    padding: 1rem;
+    min-height: 95vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.say-hi {
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 0 1rem;
+    text-align: left;
+    color: var(--six);
+}
+
+.my-photo{
+    object-fit: cover;
+    max-width: 45vw;
+    max-height: 30vh; 
+    filter:grayscale(.8);
+    border-radius: 5%;
+    z-index: 1;
+}
+/* 
+.backgroundColor {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    z-index: 0;
+    width: calc(70%);
+    height: calc(120%);
+    background: linear-gradient(60deg, var(--one), var(--four));
+    border-radius: 50%;
+} */
+
+.my-name {
+    font-weight: bold;
+    font-size: 5rem;
+    color: var(--four);
+    text-transform: uppercase;
+}
+
+.my-items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+
+
+.resume-about-me {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    z-index: 1;
+}
+
+.about-me p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    border-bottom: solid 0.3rem var(--two);
+    border-right: solid 0.3rem var(--two);
+    border-radius: 0 0 7% 0;
+    padding-bottom: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.2rem;
+
+}
+
+.code-languages {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.code-symbol {
+    font-size: 4rem;
+    background: linear-gradient(60deg, var(--one), var(--four));
+    padding: 1rem;
+    border-radius: 20%;
+    color: var(--one);
+}
+
+.about-me {
+    display: grid;
+    gap: 2rem;
+}
+
+.about-me p {
+    z-index: 2;
+    margin: 0 1.5rem;
+    text-align: right;
+    font-size: 1.9rem;
+}
+/* retangulo colorido atrás do text about  */
+.background-Ball {
+    position: absolute;
+    top: 1;
+    right: 1;
+    z-index: -1;
+    width: calc(52%);
+    height: calc(80%);
+    background: linear-gradient(60deg, var(--one), var(--four));
+    border-radius: 10%;
+    transform: rotate(45deg);
+    overflow: none;
+}
+
