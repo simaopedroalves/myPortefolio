@@ -11,114 +11,20 @@
 }
 
 :root {
-    --one: #0A4D68;
-    --two: #088395;
-    --three: #05BFDB;
-    --four: #00FFCA;
-    --five: #000;
-    --six: #7D7C7C;
-    --seven: #fff;
-}
-/* 
-====================== 
-.box {
-    background-color: transparent;
-    height: 2.5rem;
-    width: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    animation: run 120s infinite linear;
+    --one:rgb(48, 56, 65);
+    --two: rgb(58, 71, 80);
+    --three:rgb(246, 201, 14);
+    --four:rgb(238, 238, 238);
+    --five:rgb(48, 56, 65, 0.7);
+    --six: rgb(58, 71, 80, 0.7);
 }
 
-@keyframes run {
-    from {left: -20vw;}
-    to {left: 190vw;}
-}
-
-.triangle {
-    /* background-color: blue; 
-    height: 0;
-    width: 0;
-    border: solid 1rem transparent;
-    border-right: 0;
-    /* border-left: 50%;
-    border-right: 50%; 
-    border-left: 2rem solid rgba(0, 255, 200, 0.3);
-    border-radius: 20%;
-   
-}
-
-.one {
-    position: absolute;
-    margin-left: 1rem;
-}
-
-.two {
-    position: absolute;
-    margin-right: 1rem;
-}
-
-.arrows-group {
-    display: grid;
-    /* gap: 0.5rem; 
-    align-items: center;
-    height: 100vh;
-}
-
-.arrows-group .box2{
-    margin-left: -30vw;
-}
-
-.arrows-group .box3 {
-    margin-left: -60vw;
-}
-.arrows-group .box4 {
-    margin-left: -90vw;
-}
-
-.right-to-left {
-    position: fixed;
-    top: 0;
-}
-
-.triangle-2 {
-    height: 0;
-    width: 0;
-    border: solid 1rem transparent;
-    border-left: 0;
-    border-right: 2rem solid rgba(0, 255, 200, 0.3);
-    border-radius: 20%;
-}
-
-.box-r-to-l {
-    background-color: transparent;
-    height: 2.5rem;
-    width: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    animation: runRtoL 120s infinite linear;
-}
-
-@keyframes runRtoL {
-    from {left: 190vw;}
-    to {left: -20vw;}
-}
-/* =============setas animadas================= 
-
-.border {
-    border: solid red 3px;;
-}
-*/
 a:link {
     color: var(--seven);
 }
 
 .body {
-    background-color: var(--five);
+    background-color: var(--one);
 } 
 
 .logo {
@@ -158,16 +64,13 @@ a:link {
     max-height: 5rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
     padding: 1rem;
-    /* border: solid green 3px; */
-    /* background-color: var(--two); */
     z-index: 999;
 }
 
 .fa-bars, .fa-xmark {
     font-size: 2rem;
-    /* border: red solid 5rem; */
     color: var(--three);
 }
 
@@ -197,14 +100,23 @@ a:link {
     padding: 2rem;
 
 }
+/* APRESENTATION */
 
 .apresentation {
-    margin-top: 3rem;
+    margin-top: 5vh;
     padding: 1rem;
     min-height: 95vh;
     display: grid;
     align-items: center;
     justify-content: center;
+    background: url('/images/me.jpg');
+    background-size: cover;
+    background-position: top;
+    border-image: linear-gradient(90deg,  var(--five), var(--six)) fill 1;
+}
+
+.yellow {
+    color: var(--three);
 }
 
 .say-hi {
@@ -212,50 +124,14 @@ a:link {
     font-size: 4rem;
     margin: 0 1rem;
     text-align: left;
-    color: var(--six);
+    color: var(--three);
 }
-
-.my-photo{
-    object-fit: cover;
-    max-width: 45vw;
-    max-height: 30vh; 
-    filter:grayscale(.8);
-    border-radius: 5%;
-    z-index: 1;
-}
-/* 
-.backgroundColor {
-    position: absolute;
-    top: -1rem;
-    left: 0;
-    z-index: 0;
-    width: calc(70%);
-    height: calc(120%);
-    background: linear-gradient(60deg, var(--one), var(--four));
-    border-radius: 50%;
-} */
 
 .my-name {
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--four);
     text-transform: uppercase;
-}
-
-.my-items {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-
-}
-
-
-
-.resume-about-me {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    z-index: 1;
 }
 
 .about-me p {
