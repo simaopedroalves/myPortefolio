@@ -61,7 +61,7 @@ a:link {
     left: 0;
     min-width: 100vw;
     max-width: 100vw;
-    max-height: 5rem;
+    max-height: 5vh;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -69,37 +69,55 @@ a:link {
     z-index: 999;
 }
 
-.fa-bars, .fa-xmark {
+.fa-xmark {
     font-size: 2rem;
     color: var(--three);
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+}
+
+.fa-bars {
+    font-size: 2rem;
+    color: var(--three);
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
 }
 
 .menu {
-
-    justify-content: center ;
+    justify-content: center;
 }
 
-.list-links {
-   display: none;
+#menuLinks {
+    transition: 1000ms;
 }
 
 .list-links-visible {
     display: grid;
     width: 70vw;
-    margin-top: 40rem;
     justify-content: center;
+    position: fixed;
+    top: 5vh;
+    right: 0;
 }
 
 .list-links-visible li {
     list-style: none;
     min-width: 80vw;
-    background-color: var(--one);
-    color: var(--six);
+    background-color: var(--three);
+    color: var(--one);
     font-size: 2.5rem;
     font-weight: bold;
     padding: 2rem;
-
 }
+
+.list-links-invisible {
+    position: fixed;
+    top: 5vh;
+    right: -100vw;
+ }
+
 /* APRESENTATION */
 
 .apresentation {
@@ -134,19 +152,6 @@ a:link {
     text-transform: uppercase;
 }
 
-.about-me p {
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    border-bottom: solid 0.3rem var(--two);
-    border-right: solid 0.3rem var(--two);
-    border-radius: 0 0 7% 0;
-    padding-bottom: 0;
-    padding-left: 0.5rem;
-    padding-right: 0.2rem;
-
-}
-
 .code-languages {
     display: flex;
     gap: 2rem;
@@ -155,34 +160,139 @@ a:link {
 
 .code-symbol {
     font-size: 4rem;
-    background: linear-gradient(60deg, var(--one), var(--four));
+    background: var(--one);
+   
     padding: 1rem;
     border-radius: 20%;
-    color: var(--one);
+    color: var(--three);
 }
+
+/* SECTION MY PROJECTS */
+.my-projects {
+    display: grid;
+    justify-content: center;
+    gap: 5vh;
+    margin: 10vh auto 0 auto;
+}
+
+.my-projects-title {
+    color: var(--three);
+    font-weight: bold;
+    text-align: center;
+}
+
+.my-projects div {
+    /* max-width: 80vw; */
+}
+
+.project-screen {
+    object-fit: cover;
+    max-width: 80vw;
+    max-height: 50vh;
+    border-radius: 10%;
+}
+
+figcaption {
+    margin: 1rem;
+    color: var(--four);
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* SEECTION ABOUT ME */
 
 .about-me {
+    color: var(--four);
+    background-color: var(--one);
+    min-height: 100vh;
+    margin: 10vh auto 0 auto;
+    padding: 0 5vw;
+    align-items: center;
+}
+
+.about-me div {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    padding: 3vw;
+}
+
+.about-me-title {
+    color: var(--three);
+    font-weight: bold;
+    text-align: center;
+}
+
+.display-none {
+    display: none;
+}
+
+/* LETS TALK SECTION */
+
+.contact-me {
+    min-height: 100vh;
+    margin: 10vh auto 0 auto;
+    color: var(--three);
+    padding: 3vw;
     display: grid;
-    gap: 2rem;
 }
 
-.about-me p {
-    z-index: 2;
-    margin: 0 1.5rem;
-    text-align: right;
-    font-size: 1.9rem;
+.lets-talk-title {
+    color: var(--three);
+    font-weight: bold;
+    text-align: center;
 }
-/* retangulo colorido atrás do text about  */
-.background-Ball {
-    position: absolute;
-    top: 1;
-    right: 1;
-    z-index: -1;
-    width: calc(52%);
-    height: calc(80%);
-    background: linear-gradient(60deg, var(--one), var(--four));
+
+h4 {
+    text-align: center;
+}
+
+.contact-me form {
+    background-color: var(--two);
     border-radius: 10%;
-    transform: rotate(45deg);
-    overflow: none;
+    padding: 5vh 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
 }
 
+.contact-me form div{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5vw;
+}
+
+.contact-me form div:nth-child(3){
+    display: grid;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: var(--one);
+    border: solid var(--three) 2px;
+    border-radius: 1rem;
+    color: var(--yellow);
+}
+
+textarea {
+    min-width: 65vw;
+}
+
+textarea::placeholder {
+    padding: 1rem;
+    color: var(--four);
+}
+
+.my-email-div {
+    margin: 10vh 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 5vh;
+}
+
+.my-email {
+    text-align: center;
+}

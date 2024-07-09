@@ -24,17 +24,19 @@ gitHubBtn.addEventListener('click', () => {
 
 
 // Action on Menu
-const bars = document.getElementById('bars')
-const listBars = document.querySelector('.list-links')
+const bars = document.querySelector('.fa-bars')
+const listBars = document.querySelector('.list-links-invisible')
 const menuLinks = document.querySelector('#menuLinks')
-const xmarkBtn = document.querySelector('.x-xmark')
+const xmarkBtn = document.querySelector('.fa-xmark')
 
 bars.addEventListener('click', () => {
-    menuLinks.classList.replace('list-links', 'list-links-visible')
-    bars.classList.replace('fa-bars', 'fa-xmark')
+    menuLinks.classList.replace('list-links-invisible', 'list-links-visible')
+    xmarkBtn.classList.remove('display-none')
+    bars.classList.add('display-none')
 })
 
 xmarkBtn.addEventListener('click', () => {
-    menuLinks.classList.replace('list-links-visible', 'list-links')
-    bars.classList.replace('fa-xmark', 'fa-bars')
+    menuLinks.classList.replace('list-links-visible', 'list-links-invisible')
+    xmarkBtn.classList.add('display-none')
+    bars.classList.remove('display-none')
 })
