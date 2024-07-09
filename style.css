@@ -75,6 +75,7 @@ a:link {
     position: fixed;
     right: 1rem;
     top: 1rem;
+    display: none;
 }
 
 .fa-bars {
@@ -83,6 +84,7 @@ a:link {
     position: fixed;
     right: 1rem;
     top: 1rem;
+    display: flex;
 }
 
 .menu {
@@ -223,9 +225,9 @@ figcaption {
     text-align: center;
 }
 
-.display-none {
+/* .display-none {
     display: none;
-}
+} */
 
 /* LETS TALK SECTION */
 
