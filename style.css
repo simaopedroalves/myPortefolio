@@ -273,15 +273,16 @@ figcaption {
     gap: 5vh;
 }
 
-.contact-me form div:not(.errorMessages){
+.contact-me form div:not(.errorMessages, .message-div){
     display: flex;
     justify-content: space-between;
     gap: 5vw;
     align-items: center;
 }
 
-.contact-me form div:nth-child(4){
+.message-div {
     display: grid;
+    gap: 5vw;
 }
 
 input[type="text"],
