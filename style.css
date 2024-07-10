@@ -114,6 +114,16 @@ a:link {
     padding: 2rem;
 }
 
+.list-links-visible li a {
+    color: var(--one);
+    text-decoration: none;
+}
+
+.list-links-visible li a:visited {
+    color: var(--one);
+    text-decoration: none;
+}
+
 .list-links-invisible {
     position: fixed;
     top: 5vh;
@@ -214,7 +224,7 @@ figcaption {
 }
 
 .about-me div {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1rem;
     padding: 3vw;
 }
@@ -245,13 +255,17 @@ figcaption {
     text-align: center;
 }
 
-h4 {
+.quick-question {
+    display: grid;
+    justify-content: center;
     text-align: center;
+    font-size: 1.2rem;
+    margin: 2vh auto;
 }
 
 .contact-me form {
     background-color: var(--two);
-    border-radius: 10%;
+    border-radius: 2rem;
     padding: 5vh 0;
     display: grid;
     align-items: center;
@@ -259,13 +273,14 @@ h4 {
     gap: 5vh;
 }
 
-.contact-me form div{
+.contact-me form div:not(.errorMessages){
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 5vw;
+    align-items: center;
 }
 
-.contact-me form div:nth-child(3){
+.contact-me form div:nth-child(4){
     display: grid;
 }
 
@@ -276,16 +291,38 @@ textarea {
     border: solid var(--three) 2px;
     border-radius: 1rem;
     color: var(--yellow);
+    padding: 0.5rem;
 }
 
 textarea {
     min-width: 65vw;
+    resize: vertical;
 }
 
 textarea::placeholder {
-    padding: 1rem;
+    padding: 0.5rem;
     color: var(--four);
 }
+
+.submit-button {
+    max-width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.7rem;
+    background-color: var(--three);
+    color: var(--one);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+.submit-button:disabled {
+    background-color: var(--one);
+    color: var(--two);
+}
+
+/* MY EMAIL */
 
 .my-email-div {
     margin: 10vh 0;
@@ -298,3 +335,4 @@ textarea::placeholder {
 .my-email {
     text-align: center;
 }
+

@@ -21,10 +21,10 @@
 
         <div class="social-media">
             <!-- simbols of social media  -->
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/simaoalves23/" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/sim%C3%A3o-alves-b13a29248/" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin-in"></i>
             </a>
            <a href="https://github.com/simaopedroalves" target="_blank" rel="noopener noreferrer"> 
@@ -38,10 +38,10 @@
         </div>
 
         <ul class="list-links list-links-invisible" id="menuLinks">
-            <li>about</li>
-            <li>projects</li>
-            <li>contact</li>
-            <li>cv</li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+            <!-- <li><a href="#cv">cv</a></li> -->
         </ul>
 
     </header>
@@ -66,7 +66,7 @@
 
         </section>
 
-    <section class="my-projects">
+    <section class="my-projects" id="projects">
         <div>
             <h2 class="my-projects-title">MY PROJECTS</h2>
         </div>
@@ -104,7 +104,7 @@
         </div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about">
         <div>
             <h2 class="about-me-title">ABOUT ME</h2>
         </div>
@@ -121,25 +121,40 @@
 
    
     
-    <section class="contact-me">
+    <section class="contact-me" id="contact">
 
         <h2 class="lets-talk-title">LET'S TALK</h2>
-        <h4>Please, fill the form below. <br> I will respond you as quickly as possible.</h4>
 
-        <form action="">
+        <div class="quick-question">
+            <p>What do you talk about?</p>
+            <p>Do you wanna work with me?</p>
+            <p>Or you wanna send me a quick message?</p>
+            <p>Fill the form below.</p>
+            <p>I will respond you as quickly as possible.</p>
+        </div>
+
+        <form class="contactForm" name="Lets_Talk_Message_Portefolio" action="/messageSubmit.html" method="POST" data-netlify="true"> 
+           
+            <input type="hidden" name="subject" value="" id="newMessage" data-remove-prefix/>
 
             <div>
                 <label for="name">Name</label>
-                <input type="text" id="name">
+                <input type="text" id="name" required>
             </div>
             <div>
                 <label for="email">Email</label>
-                <input type="email" id="email">
+                <input type="email" id="email" required>
             </div>
             <div>
                 <label for="message">Message</label>
-                <textarea type="text" id="message" rows="8" cols="30" placeholder="What do you wanna talk about?"></textarea>    
+                <textarea type="text" id="message" rows="8" cols="30" placeholder="What do you wanna talk about?" required></textarea>    
             </div>
+            <div class="errorMessages">
+                <p class="errorMessageName"></p>
+                <p class="errorMessageEmail"></p>
+            </div>
+
+            <button type="submit" class="submit-button" disabled>Submit</button>
 
         </form>
 
