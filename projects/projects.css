@@ -1,0 +1,55 @@
+.project-section {
+    padding: 5vh 3vw;
+    display: grid;
+    gap: 10vh;
+}
+
+.div-one {
+    color: var(--four);
+    display: grid;
+    justify-content: center;
+    text-align: left;
+    gap: 1rem;
+}
+
+.div-two {
+    color: var(--four);
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    background-color: var(--two);
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.div-two h4 {
+    color: var(--three);
+}
+
+.div-two h5 {
+    background-color: var(--two);
+    padding: 3vh;
+    font-weight: bold;
+    color: var(--three);
+}
+
+.div-two h5 a{
+    color: var(--four);
+    text-decoration: none;
+}
+
+.div-two h4, .div-two h5 {
+    /* grid-column: span 3; */
+}
+
+.used-languages {
+    display: flex;
+    gap: 5vw;
+    margin: 0 auto;
+}
+
+.website-name:hover {
+    cursor: pointer;
+}

@@ -185,7 +185,9 @@ a:link {
     justify-content: center;
     gap: 5vh;
     margin: 10vh auto 0 auto;
+    max-width: 100vw;
 }
+
 
 .my-projects-title {
     color: var(--three);
@@ -193,23 +195,34 @@ a:link {
     text-align: center;
 }
 
-.my-projects div {
+.my-projects div:not(:first-child) {
     /* max-width: 80vw; */
+    padding: 3vh;
+    background-color: var(--two);
+    border-radius: 2rem;
+}
+
+figure a{
+    padding: rem;
 }
 
 .project-screen {
-    object-fit: cover;
-    max-width: 80vw;
+    object-fit: contain;
+    min-width: 100%;
+    /* max-width: 90vw; */
     max-height: 50vh;
-    border-radius: 10%;
+    border-radius: 3%;
+    /* border: solid var(--three) 2px; */
 }
 
 figcaption {
     margin: 1rem;
     color: var(--four);
-    font-weight: 500;
+    font-weight: bold;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--three);
 }
 
 /* SEECTION ABOUT ME */
@@ -233,6 +246,10 @@ figcaption {
     color: var(--three);
     font-weight: bold;
     text-align: center;
+}
+
+.about-me div p:last-child {
+    color: var(--three);
 }
 
 /* .display-none {
