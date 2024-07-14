@@ -1,7 +1,7 @@
-$(document).ready(function() {
-    // $(".logo, .social-media, .apresentation").addClass('border');
-//  $('.header').css("border", "solid, 3px green");
-})
+// $(document).ready(function() {
+//     // $(".logo, .social-media, .apresentation").addClass('border');
+// //  $('.header').css("border", "solid, 3px green");
+// })
 
 const gitHubBtn = document.getElementById('gitHub')
 
@@ -42,6 +42,21 @@ xmarkBtn.addEventListener('click', () => {
     bars.style.display = 'flex'
 })
 
+const allHrefsMenu = menuLinks.querySelectorAll('a');
+
+allHrefsMenu.forEach(href => {
+    href.addEventListener('click', () => {
+        setTimeout(() => {
+            closeMenu()
+        }, 1000);
+    })
+}); 
+
+function closeMenu () {
+    menuLinks.classList.replace('list-links-visible', 'list-links-invisible')
+    xmarkBtn.style.display = 'none'
+    bars.style.display = 'flex'
+}
 // form message
 
 // CHECK IF NAME IS VALID
@@ -110,3 +125,11 @@ function newMessage () {
     console.log(newMessageSubject.value);
 }
 
+
+let a = document.querySelectorAll('a li')
+
+a.forEach(el => {
+    el.addEventListener('click', () => {
+        el.style.display.color = 'var(--four)'
+    })
+})

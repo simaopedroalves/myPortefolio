@@ -20,7 +20,7 @@
 }
 
 a:link {
-    color: var(--seven);
+    text-decoration: none;
 }
 
 .body {
@@ -69,6 +69,7 @@ a:link {
     z-index: 999;
 }
 
+/* MENU */
 .fa-xmark {
     font-size: 2rem;
     color: var(--three);
@@ -92,7 +93,7 @@ a:link {
 }
 
 #menuLinks {
-    transition: 1000ms;
+    transition: 300ms;
 }
 
 .list-links-visible {
@@ -104,7 +105,7 @@ a:link {
     right: 0;
 }
 
-.list-links-visible li {
+.list-links-visible a li {
     list-style: none;
     min-width: 80vw;
     background-color: var(--three);
@@ -112,14 +113,11 @@ a:link {
     font-size: 2.5rem;
     font-weight: bold;
     padding: 2rem;
-}
-
-.list-links-visible li a {
-    color: var(--one);
     text-decoration: none;
 }
 
-.list-links-visible li a:visited {
+a li:visited,
+a li:active{
     color: var(--one);
     text-decoration: none;
 }
@@ -128,7 +126,7 @@ a:link {
     position: fixed;
     top: 5vh;
     right: -100vw;
- }
+}
 
 /* APRESENTATION */
 
@@ -354,3 +352,12 @@ textarea::placeholder {
     text-align: center;
 }
 
+.my-email a {
+    color: var(--three);
+    text-decoration: none;
+}
+
+.my-email a:visited {
+    color: var(--three);
+    text-decoration: none; 
+}
