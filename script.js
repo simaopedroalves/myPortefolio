@@ -42,13 +42,14 @@ xmarkBtn.addEventListener('click', () => {
     bars.style.display = 'flex'
 })
 
+// CLOSE MENU WHEN THE USER CLICKS EACH BUTTON
 const allHrefsMenu = menuLinks.querySelectorAll('a');
 
 allHrefsMenu.forEach(href => {
     href.addEventListener('click', () => {
         setTimeout(() => {
             closeMenu()
-        }, 1000);
+        }, 500);
     })
 }); 
 
@@ -122,14 +123,4 @@ const newMessageSubject = document.querySelector('#newMessage')
 
 function newMessage () {
     newMessageSubject.value = 'New message from ' + userName.value
-    console.log(newMessageSubject.value);
 }
-
-
-let a = document.querySelectorAll('a li')
-
-a.forEach(el => {
-    el.addEventListener('click', () => {
-        el.style.display.color = 'var(--four)'
-    })
-})
