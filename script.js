@@ -124,3 +124,12 @@ const newMessageSubject = document.querySelector('#newMessage')
 function newMessage () {
     newMessageSubject.value = 'New message from ' + userName.value
 }
+
+
+// user click hover projects images 
+
+const projectHorta = document.querySelector('.fig-horta-da-ria');
+
+projectHorta.addEventListener('click', () => {
+    window.opener('/projects/hortaDaRia-project.html')
+})
