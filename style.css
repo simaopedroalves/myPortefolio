@@ -171,7 +171,6 @@ a li:active{
 .code-symbol {
     font-size: 4rem;
     background: var(--one);
-   
     padding: 1rem;
     border-radius: 20%;
     color: var(--three);
@@ -208,7 +207,6 @@ a li:active{
     background-repeat: no-repeat;
     min-height: 50vh;
     position: relative;
-    cursor: pointer;
 }
 
 .fig-with-background figcaption {
@@ -227,6 +225,7 @@ a li:active{
     font-size: 1.5rem;
     text-transform: uppercase;
     color: var(--three);
+    cursor: pointer;
 }
 
 .my-projects {
