@@ -402,6 +402,11 @@ textarea::placeholder {
     text-decoration: none;
 }
 
+.my-email a:hover {
+    color: var(--four);
+    text-decoration: none;
+}
+
 .my-email a:visited {
     color: var(--three);
     text-decoration: none; 
