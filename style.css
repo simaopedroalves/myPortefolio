@@ -133,14 +133,16 @@ a li:active{
 /* APRESENTATION */
 
 .apresentation {
-    min-height: 95vh;
+    min-height: 100vh;
     display: grid;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     background: url('/images/me.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: top left;
     border-image: linear-gradient(90deg,  var(--five), var(--six)) fill 1;
+
 }
 
 .yellow {
@@ -153,6 +155,7 @@ a li:active{
     margin: 0 1rem;
     text-align: left;
     color: var(--three);
+    
 }
 
 .my-name {
@@ -249,25 +252,6 @@ a li:active{
     border-radius: 2rem;
 }
 
-/* .project-screen {
-    object-fit: contain;
-    min-width: 100%;
-    /* max-width: 90vw; 
-    max-height: 50vh;
-    border-radius: 3%;
-    /* border: solid var(--three) 2px; 
-}
-
-figcaption {
-    margin: 1rem;
-    color: var(--four);
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: var(--three);
-} */
-
 /* SEECTION ABOUT ME */
 
 .about-me {
@@ -293,6 +277,27 @@ figcaption {
 
 .about-me div p:last-child {
     color: var(--three);
+}
+
+.about-me-div-with-photo {
+    display: flex;
+    align-items: center;
+    max-width: 100vw;
+    gap: 5vw;
+    justify-content: center;
+}
+
+.about-me-div-with-photo p{
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--three);
+    text-align: justify;
+}
+
+.about-me-image {
+    object-fit: cover;
+    max-width: 40vw;
+    border-radius: 1rem;
 }
 
 /* .display-none {
@@ -412,6 +417,16 @@ textarea::placeholder {
     text-decoration: none; 
 }
 
+.office-photo {
+    background-image: url('images/my_office.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 30vh;
+    min-width: 90vw;
+    border-radius: 1rem;
+}
+
 @media (orientation: landscape) {
 
     .list-links-invisible {
@@ -436,6 +451,12 @@ textarea::placeholder {
         color: var(--four);
     }
 
+    
+    .apresentation {
+        background-size: contain;
+        background-position: right;
+    }
+
     .my-projects {
         grid-template-columns: repeat(2, 1fr);
         margin: 10vh;
@@ -451,6 +472,24 @@ textarea::placeholder {
     .fa-xmark::after,
     .fa-xmark::before {
         display: none;
+    }
+
+    .about-me-div-with-photo p{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .about-me-image {
+        max-height: 80vh;
+    }
+
+    .office-photo {
+        min-height: 90vh;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        min-width: 30vw;
     }
 }
 
@@ -528,6 +567,16 @@ textarea::placeholder {
     .fig-warehouse {
         background-image: url('/images/armazem-laptop.png');
 
+    }
+
+    .about-me-div-with-photo p{
+        font-size: 2.5rem;
+    }
+
+    .office-photo {
+        min-height: 30vh;
+        
+        background-position: top;
     }
 
 }
