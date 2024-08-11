@@ -58,6 +58,46 @@ function closeMenu () {
     xmarkBtn.style.display = 'none'
     bars.style.display = 'flex'
 }
+
+
+// MY-PROJECTS SECTION
+
+let myProjectsSection = document.querySelector('.my-projects');
+
+myProjectsSection.addEventListener('wheel', (scroll) => {
+   
+    scroll.preventDefault();
+    myProjectsSection.scrollLeft += scroll.deltaY;
+    myProjectsSection.style.scrollBehavior = 'auto';
+
+});
+
+// THE BALLS ABOVE MY PROJECTS SECTION WILL CHANGE COLOR 
+// WHEN 50% OF THE RESPECTIVE PROJECT APPEARS ON SCREEN
+let indicationBalls = document.querySelectorAll('.dot-section .dot')
+let allMyProjects = document.querySelectorAll('.my-projects div')
+
+const observer = new IntersectionObserver(watchedProject => {
+    watchedProject.forEach(project => {
+        if (project.isIntersecting) {
+            
+            indicationBalls.forEach(ball => {
+                ball.classList.remove('active')
+            });
+
+            const indexOfProject = Array.from(allMyProjects).indexOf(project.target);
+
+            indicationBalls[indexOfProject].classList.add('active');   
+        } 
+    });
+
+}, {threshold: 0.5});
+
+allMyProjects.forEach(project => {
+    observer.observe(project)
+})
+
+
 // form message
 
 // CHECK IF NAME IS VALID
