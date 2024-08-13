@@ -62,16 +62,6 @@ function closeMenu () {
 
 // MY-PROJECTS SECTION
 
-let myProjectsSection = document.querySelector('.my-projects');
-
-myProjectsSection.addEventListener('wheel', (scroll) => {
-   
-    scroll.preventDefault();
-    myProjectsSection.scrollLeft += scroll.deltaY;
-    myProjectsSection.style.scrollBehavior = 'auto';
-
-});
-
 // THE BALLS ABOVE MY PROJECTS SECTION WILL CHANGE COLOR 
 // WHEN 50% OF THE RESPECTIVE PROJECT APPEARS ON SCREEN
 let indicationBalls = document.querySelectorAll('.dot-section .dot')

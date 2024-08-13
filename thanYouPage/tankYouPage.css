@@ -1,0 +1,23 @@
+.thank-you-section {
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 90vw;
+    max-width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-section h2,
+.thank-you-section h4 {
+    font-weight: bold;
+    color: var(--three);
+    text-align: center;
+}
+
+.thank-you-section img {
+    border-radius: 50%;
+    max-height: 50vh;
+    margin: 0 auto;
+}

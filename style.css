@@ -46,6 +46,7 @@ a:link {
     gap: 2vw;
     min-width: 20vw;
     justify-content: space-around;
+    align-items: center;
 }
 
 .social-media a {
@@ -172,12 +173,20 @@ a li:active{
 }
 
 .code-symbol {
-    font-size: 4rem;
     background: var(--one);
+    font-size: 4rem;
     padding: 1rem;
     border-radius: 20%;
     color: var(--three);
 }
+
+.code-languages .react {
+    font-size: 4rem;
+    border-radius: 20%;
+    color: var(--three);
+    animation: 2s flash infinite;
+}
+
 
 /* SECTION MY PROJECTS */
 
@@ -194,10 +203,6 @@ a li:active{
 .my-projects::-webkit-scrollbar {
     display: none;
 }
-
-/* .my-projects:hover {
-    overflow-x: scroll;
-} */
 
 .my-projects-title h2{
     margin: 10vh auto 5vh auto;
@@ -222,7 +227,6 @@ a li:active{
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 70vh;
-    position: relative;
     min-width: 80vw;
     border-radius: 1rem;
 
@@ -473,19 +477,21 @@ textarea::placeholder {
     }
 
     .my-projects {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 10vh;
     }
 
-    .my-projects-title {
+    /* .my-projects-title {
         grid-column: span 2;
-    }
+    } */
 
     .fa-bars, .fa-xmark, 
     .fa-bars::after, 
     .fa-bars::before,
     .fa-xmark::after,
-    .fa-xmark::before {
+    .fa-xmark::before,
+    .dot-section {
         display: none;
     }
 
@@ -541,11 +547,34 @@ textarea::placeholder {
     }
 
     .my-projects {
-        grid-template-columns: repeat(2, 1fr);
-        margin: 10vh;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      max-width: fit-content;
+      margin: 0 auto;
+      overflow-x: visible;
+    }
+
+    .my-projects:hover {
+        overflow-y: scroll;
+    }
+
+    .my-projects div {
+        min-width: none;
+        min-width: 50vw;
+        max-width: 60vw;
+        min-height: 50vh;
+        padding: 3rem;
+    }
+
+    .fig-with-background {
+        min-width: 50vw;
+        max-width: 50vw;
+        min-height: 50vh;
+
     }
 
     .my-projects-title {
+        margin: 20vh auto 10vh auto;
         grid-column: span 2;
     }
 
@@ -559,9 +588,16 @@ textarea::placeholder {
 
     .about-me {
         align-content: center;
-        font-size: 2rem;
-        margin: 0;
-        
+        margin: 20vh auto 10vh auto;
+    }
+
+    .about-me p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .about-me-div-with-photo p{
+        font-size: 2.5rem;
     }
 
     .fig-horta-da-ria {
@@ -588,14 +624,44 @@ textarea::placeholder {
 
     }
 
-    .about-me-div-with-photo p{
-        font-size: 2.5rem;
+    .quick-question {
+        font-size: 1.5rem;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .contactForm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contactForm .message-div,
+    .contactForm .errorMessages,
+    .submit-button {
+        grid-column: span 2;
+        min-width: 25vw;
+        max-width: 50vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .message-div {
+        gap: 1vw;
+        margin: 0 auto;
+    }
+
+    textarea {
+        min-width: 50vw;
+        max-width: 50vw;
+    }
+
+    .contact-me form div:not(.errorMessages, .message-div){
+        justify-content: space-around;
     }
 
     .office-photo {
-        min-height: 30vh;
-        
+        min-height: 50vh;
         background-position: top;
+        background-size: contain;
     }
 
 }
