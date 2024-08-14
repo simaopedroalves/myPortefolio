@@ -443,8 +443,9 @@ textarea::placeholder {
 
 @media (orientation: landscape)  {
 
-    header {
-        align-items: center;
+    .social-media {
+        min-width: 10vw;
+        margin-top: 1vh ;
     }
 
     .list-links-invisible {
