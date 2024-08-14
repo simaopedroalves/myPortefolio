@@ -20,7 +20,10 @@ header {
 
 @media (orientation: landscape) {
 
-    
+    header {
+        background-color: var(--one);
+    }
+
     .cv-section {
         margin: 10vh;
         max-width: 100vw;
