@@ -22,6 +22,12 @@ header {
 
     header {
         background-color: var(--one);
+        padding: 2vh 0;
+    }
+
+    .social-media {
+        min-width: 10vw;
+        margin-top: 1vh;
     }
 
     .cv-section {

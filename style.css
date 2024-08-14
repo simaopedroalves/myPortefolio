@@ -443,10 +443,6 @@ textarea::placeholder {
 
 @media (orientation: landscape)  {
 
-    .social-media {
-        min-width: 10vw;
-        margin-top: 1vh ;
-    }
 
     .list-links-invisible {
         display: flex;
