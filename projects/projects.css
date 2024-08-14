@@ -35,13 +35,9 @@
     color: var(--three);
 }
 
-.div-two h5 a{
+.div-two h5 a {
     color: var(--four);
     text-decoration: none;
-}
-
-.div-two h4, .div-two h5 {
-    /* grid-column: span 3; */
 }
 
 .used-languages {

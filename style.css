@@ -26,7 +26,7 @@ a:link {
 .body {
     background-color: var(--one);
 } 
-
+ 
 .logo {
     font-size: 4rem;
     font-weight: bold;
@@ -69,7 +69,6 @@ a:link {
     justify-content: space-between;
     padding: 2vw;
     z-index: 999;
-
 }
 
 /* MENU */
@@ -141,7 +140,7 @@ a li:active{
     background: url('/images/me.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top left;
+    background-position: center;
     border-image: linear-gradient(90deg,  var(--five), var(--six)) fill 1;
 
 }
@@ -156,7 +155,6 @@ a li:active{
     margin: 0 1rem;
     text-align: left;
     color: var(--three);
-    
 }
 
 .my-name {
@@ -446,18 +444,17 @@ textarea::placeholder {
     border-radius: 1rem;
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape)  {
 
     .list-links-invisible {
         display: flex;
         top: 0;
         right: 0;
-        margin: 3vh;
         min-width: 60vw;
         justify-content: space-around;
         font-size: 1.5rem;
         font-weight: bold;
-        align-items: center;
+        align-content: center;
     }
 
     .list-links-invisible a {
@@ -481,10 +478,6 @@ textarea::placeholder {
         grid-template-columns: repeat(2, 1fr);
         margin: 10vh;
     }
-
-    /* .my-projects-title {
-        grid-column: span 2;
-    } */
 
     .fa-bars, .fa-xmark, 
     .fa-bars::after, 
