@@ -109,7 +109,7 @@ a:link {
 
 .list-links-visible a li {
     list-style: none;
-    min-width: 80vw;
+    min-width: 70vw;
     background-color: var(--three);
     color: var(--one);
     font-size: 2.5rem;
@@ -446,13 +446,16 @@ textarea::placeholder {
 
 @media (orientation: landscape)  {
 
+    header {
+        background-color: var(--one);
+    }
+
     .list-links-invisible {
         display: flex;
         top: 0;
         right: 0;
-        min-width: 60vw;
-        justify-content: space-between;
-        padding: 1vh;
+        min-width: 70vw;
+        justify-content: space-around;
         font-size: 1.5rem;
         font-weight: bold;
         align-content: center;
