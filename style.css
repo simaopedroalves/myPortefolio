@@ -451,7 +451,8 @@ textarea::placeholder {
         top: 0;
         right: 0;
         min-width: 60vw;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 1vh;
         font-size: 1.5rem;
         font-weight: bold;
         align-content: center;
