@@ -62,30 +62,61 @@ function closeMenu () {
 
 // MY-PROJECTS SECTION
 
+// OPEN NEW TAB TO READ MORE ABOUT EACH PROJECT
+const readMoreAboutProject = document.querySelectorAll('.read-more-about-project');
+
+readMoreAboutProject.forEach(project => {
+    let projectLink = project.parentElement.querySelector('a').href;
+    
+    project.addEventListener('click', () => {
+        window.location.href = projectLink;
+    });
+});
+
+const allLiveButtons = document.querySelectorAll('.btn-live');
+
+allLiveButtons.forEach(btn => {
+   let linkPage = btn.parentElement.querySelector('.live-link').textContent;
+
+   btn.addEventListener('click', () => {
+        window.location.href = linkPage;
+   });
+});
+
+const allCodeButtons = document.querySelectorAll('.btn-code');
+
+allCodeButtons.forEach(btn => {
+    let linkPage = btn.parentElement.querySelector('.code-link').textContent;
+ 
+    btn.addEventListener('click', () => {
+         window.location.href = linkPage;
+    });
+ });
+
 // THE BALLS ABOVE MY PROJECTS SECTION WILL CHANGE COLOR 
 // WHEN 50% OF THE RESPECTIVE PROJECT APPEARS ON SCREEN
-let indicationBalls = document.querySelectorAll('.dot-section .dot')
-let allMyProjects = document.querySelectorAll('.my-projects div')
+// let indicationBalls = document.querySelectorAll('.dot-section .dot')
+// let allMyProjects = document.querySelectorAll('.my-projects div')
 
-const observer = new IntersectionObserver(watchedProject => {
-    watchedProject.forEach(project => {
-        if (project.isIntersecting) {
+// const observer = new IntersectionObserver(watchedProject => {
+//     watchedProject.forEach(project => {
+//         if (project.isIntersecting) {
             
-            indicationBalls.forEach(ball => {
-                ball.classList.remove('active')
-            });
+//             indicationBalls.forEach(ball => {
+//                 ball.classList.remove('active')
+//             });
 
-            const indexOfProject = Array.from(allMyProjects).indexOf(project.target);
+//             const indexOfProject = Array.from(allMyProjects).indexOf(project.target);
 
-            indicationBalls[indexOfProject].classList.add('active');   
-        } 
-    });
+//             indicationBalls[indexOfProject].classList.add('active');   
+//         } 
+//     });
 
-}, {threshold: 0.5});
+// }, {threshold: 0.5});
 
-allMyProjects.forEach(project => {
-    observer.observe(project)
-})
+// allMyProjects.forEach(project => {
+//     observer.observe(project)
+// })
 
 
 // form message

@@ -37,7 +37,7 @@
 
 .div-two h5 a {
     color: var(--four);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .used-languages {

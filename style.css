@@ -189,15 +189,15 @@ a li:active{
 /* SECTION MY PROJECTS */
 
 .my-projects {
-    display: flex;
-    overflow-x: scroll;
+    display: grid;
+    /* overflow-x: scroll; */
     gap: 2vh;
     padding: 0 2.5vw;
 }
-
+/* 
 .my-projects::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .my-projects-title h2{
     margin: 10vh auto 5vh auto;
@@ -207,14 +207,17 @@ a li:active{
 }
 
 .my-projects div {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-    min-width: 80vw;
+    gap: 2rem;
     background-color: var(--two);
     border-radius: 1rem;
-    min-height: 80vh;
-    padding: 0 1.5vw;
+    padding: 8vw 5vw;
+    color: var(--four);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .fig-with-background {
@@ -224,7 +227,45 @@ a li:active{
     min-height: 70vh;
     min-width: 80vw;
     border-radius: 1rem;
+}
 
+.project div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-live, 
+.btn-code {
+    min-width: 30vw;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: var(--two);
+    background-color: var(--three);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.live-link,
+.code-link {
+    display: none;
+}
+
+.btn-code:hover,
+.btn-live:hover {
+    color: var(--three);
+    background-color: var(--two);
+}
+
+.read-more-about-project {
+    color: var(--three);
+    border: solid 3px var(--three);
+    border-radius: 1rem;
+    margin: 0.2rem auto;
+    padding: 1rem;
+    font-weight: 600;
 }
 
 .fig-horta-da-ria {
@@ -404,12 +445,14 @@ textarea::placeholder {
 
 /* MY EMAIL */
 
-.my-email-div {
-    margin: 10vh 0;
+.my-email-div,
+.made-by {
+    margin: 10vh auto;
     display: grid;
     justify-content: center;
     align-content: center;
     gap: 5vh;
+    color: var(--three);
 }
 
 .my-email {
@@ -439,6 +482,31 @@ textarea::placeholder {
     min-height: 30vh;
     min-width: 90vw;
     border-radius: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+
+.skills h3 {
+    color: var(--three);
+    text-transform: uppercase;
+}
+
+.skills p {
+    color: var(--four);
+}
+
+footer .social-media {
+    margin: 10vh auto;
+}
+
+footer .social-media i {
+    font-size: 2rem;
 }
 
 @media (orientation: landscape)  {
