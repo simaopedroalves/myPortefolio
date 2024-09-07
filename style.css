@@ -224,8 +224,8 @@ a li:active{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: 70vh;
-    max-height: 70vh;
+    min-height: 70svh;
+    max-height: 70svh;
     min-width: 80vw;
     border-radius: 1rem;
 }
