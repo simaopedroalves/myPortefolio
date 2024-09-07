@@ -218,8 +218,7 @@ a li:active{
     text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
-    min-height: 100svh;
-    max-height: 100svh;
+    min-height: fit-content;
 }
 
 .fig-with-background {
