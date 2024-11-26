@@ -186,7 +186,6 @@ a li:active{
     animation: 2s flash infinite;
 }
 
-
 /* SECTION MY PROJECTS */
 
 .my-projects {
@@ -288,6 +287,10 @@ a li:active{
     background-image: url('/images/hortaDaRia.jpg');
 }
 
+.fig-talho-barreiro {
+    background-image: url('/images/talho-barreiro.jpg');
+}
+
 .fig-gelato-and-world {
     background-image: url('/images/gelatoAndWorld.png');
 }
@@ -321,6 +324,7 @@ a li:active{
 .active {
     background-color: var(--three);
 }
+
 
 /* SEECTION ABOUT ME */
 
@@ -637,6 +641,10 @@ footer .social-media i {
         border-radius: 1rem;
     }
 
+    .header {
+        max-height: 3vh;
+    }
+
     .social-media a:hover {
         color: var(--four);
     }
@@ -713,6 +721,10 @@ footer .social-media i {
 
     .fig-horta-da-ria {
         background-image: url('/images/hortaDaRia-laptop.png');
+    }
+
+    .fig-talho-barreiro {
+        background-image: url('/images/talho-barreiro-laptop.png');
     }
 
     .fig-gelato-and-world {
