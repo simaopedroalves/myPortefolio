@@ -287,6 +287,10 @@ a li:active{
     background-image: url('/images/hortaDaRia.jpg');
 }
 
+.fig-celeste-azevedo {
+    background-image: url('/images/websiteCeleste.jpg');
+}
+
 .fig-talho-barreiro {
     background-image: url('/images/talho-barreiro.jpg');
 }

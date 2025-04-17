@@ -27,6 +27,7 @@
 
 .div-two h4 {
     color: var(--three);
+
 }
 
 .div-two h5 {
@@ -49,5 +50,10 @@
 
 .website-name:hover {
     cursor: pointer;
+}
+
+.div-one code {
+    color: var(--three);
+    background-color: transparent;
 }
 
